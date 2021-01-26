@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+
+service CarService {
+    rpc Create (CarCreateRequest) returns (CarCreateResponse);
+}
+
+message CarCreateRequest {
+    string name = 1;
+}
+
+message CarCreateResponse {
+    string x = 1;
+
+}
